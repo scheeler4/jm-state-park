@@ -1,0 +1,3037 @@
+@font-face {
+  font-family: 'MyWebFont';
+  src: url('fonts/lato/Lato-Regular.ttf');
+}
+@font-face {
+  font-family: 'MyWebFontBold';
+  src: url('fonts/lato/Lato-Bold.ttf');
+}
+@font-face {
+  font-family: 'patua-one';
+  src: url('fonts/patua-one/PatuaOne-Regular.otf');
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*NO JS ALERT*/
+.noscriptAlert {
+	position: fixed;
+	background-color: #ff3232;
+	padding: 20px;
+	z-index: 100;
+	left: 0;
+	width: 100%;
+	top: 0;
+	padding: 7px;
+}
+
+.noscriptAlert h4 {
+	color: #fff;
+	display: inline;
+}
+
+.noscriptAlert p {
+	display: inline;
+	color: #000;
+	margin-left: 10px;
+}
+
+.noscriptAlert p a {
+	color: #fff;
+}
+/*****************/
+
+strong {
+	font-family: 'MyWebFontBold';
+}
+
+body {
+	font-family: 'MyWebFont', arial, geneva, sans-serif;
+}
+
+li {
+	list-style: none;
+}
+
+.arrowRotate180 {
+	-webkit-transform: rotate(180deg) !important;
+  	-moz-transform: rotate(180deg) !important;
+  	-o-transform: rotate(180deg) !important;
+	transform: rotate(180deg) !important;
+}
+
+.btn {
+	outline: none !important;
+	box-shadow: none !important;
+}
+
+.btn-small {
+	padding: 3px 10px;
+}
+
+.btn-green {
+	background-color: #336600;
+	color: #fff !important;
+	-webkit-transition: .3s;
+	transition: .3s;
+}
+
+.btn-green:hover {
+	background-color: #1a3300;
+}
+
+.btn-blue {
+	background-color: #194775;
+	color: #fff !important;
+	-webkit-transition: .3s;
+	transition: .3s;
+}
+
+.btn-blue:hover {
+	background-color: #003366;
+}
+
+.btn-orange {
+	background-color: #FF9900;
+	color: #fff !important;
+	-webkit-transition: .3s;
+	transition: .3s;
+}
+
+.btn-orange:hover {
+	background-color: #e65c00;
+}
+
+.btn-yellow:hover {
+	background-color: #E5c100;
+}
+.info-red {
+	color: #8b0000;
+}
+
+.wSnW {
+	white-space: nowrap;
+}
+
+.button {
+	padding: 5px;
+	border-radius: 3px;
+	letter-spacing: 1px;
+	text-decoration: none !important;
+	-webkit-transition: .3s;
+	transition: .3s;
+}
+
+.textPageAnchor {
+	display: block;
+	height: 110px;
+	margin-top: -110px;
+	visibility: hidden;
+}
+
+.parkPageInfoGreen {
+	padding: 10px;
+}
+
+
+.form-control.small {
+	height: auto;
+}
+
+.pointer {
+	cursor: pointer !important;
+}
+
+.font-small {
+	font-size: 14px !important;
+}
+
+.custom-container {
+	height: 0;
+}
+
+/*this applies exclusively to secure site (reservations and shop portals)*/
+.secureSite header {
+	height: 110px !important;
+	background-color: #336600 !important;
+	border-bottom: none !important;
+}
+
+.secureSite header .header-main .header-left a .vspText {
+	margin: 0 !important;
+	text-transform: uppercase;
+	-webkit-transition: none;
+	transition: none;
+}
+
+.secureSite header .secureText {
+	color: #eee;
+	clear: both;
+}
+
+.secureSite main.textPage {
+	margin-top: 100px !important;
+	padding-bottom: 20px;
+}
+
+.secureSite a.backToSite {
+	color: #fff;
+	letter-spacing: 1px;
+	float: right;
+	margin-top: 27px;
+}
+@media screen and (max-width: 1020px) {
+	.secureSite header .headerTopBar .headerTopBarLeft {
+		display: inline;
+	}
+}
+@media screen and (max-width: 700px) {
+	.secureSite a.backToSite {
+		background-color: rgba(0,0,0,.8);
+		margin-top: 75px;
+		padding: 10px;
+	}
+}
+/********* end secure site code ***************/
+
+#indexWrap {
+	overflow-x: hidden;
+}
+
+img.footer-mountains {
+	position: absolute;
+	right: 15px;
+	bottom: 124px;
+	width: 400px;
+}
+
+/**********************HEADER*************/
+header {
+	background: #336600;
+	position: fixed;
+	height: 130px;
+	width: 100%;
+	top: 0;
+	z-index: 3;
+	-webkit-transition: .3s;
+	transition: .3s;
+}
+
+header .headerTopBar {
+	background-color: #1a3300;
+	height: 35px;
+	margin: 0 -15px;
+	padding: 0 15px;
+	position: relative;
+	z-index: 2;
+}
+
+header .headerTopBar .headerTopBarLeft, header .header-main .header-left {
+	float: left;
+	height: 0;
+}
+
+header .headerTopBar .headerTopBarLeft a img {
+	width: 100px;
+	margin-top: 11px;
+}
+
+header .headerTopBar .headerTopBarRight, header .header-main .header-nav {
+	float: right;
+}
+
+header .header-main .header-left a {
+	display: block;
+	color: #fff;
+	padding-top: 5px;
+	text-decoration: none !important;
+}
+
+header .header-main .header-left a img.fprLogo {
+	width: 100px;
+    float: left;
+    position: relative;
+    top: 0;
+    z-index: 1;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+header .header-main .header-left a .vspText {
+	font-size: 30px;
+    float: left;
+    margin: 20px 0 0 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+header .header-main .header-nav .navLi {
+	float: left;
+	letter-spacing: 2px;
+	-webkit-transition: .3s;
+	transition: .3s;
+}
+
+header .header-main .header-nav .navLi a.topAnch {
+	color: #eee;
+	padding: 39px 15px 36px;
+	display: block;
+	text-decoration: none !important;
+	-webkit-transition: .3s;
+	transition: .3s;
+}
+
+.mobileMenuIcon {
+	display: none;
+	position: absolute;
+	top: 12px;
+	left: 10px;
+}
+
+header .header-main .header-nav .navLi a.topAnch.visitAnch .mobileMenuIcon {
+	left: 13px;
+}
+header .header-main .header-nav .navLi a.topAnch.thingsToDoAnch .mobileMenuIcon {
+	width: 20px;
+	top: 10px;
+	left: 8px;
+}
+
+header .header-main .header-nav .navLi:hover a.topAnch, header .header-main .header-nav .navLi:focus a.topAch{
+	color: #fff;
+}
+
+header .header-main .header-nav .navLi.visitLi:hover, header .header-main .header-nav .navLi.visitLi:focus {
+	background-color: #1289A7;
+}
+header .header-main .header-nav .navLi.thingsToDoLi:hover, header .header-main .header-nav .navLi.thingsToDoLi:focus {
+	background-color: #FFC312;
+}
+header .header-main .header-nav .navLi.aboutUsLi:hover, header .header-main .header-nav .navLi.aboutUsLi:focus {
+	background-color: #F79F1F;
+}
+header .header-main .header-nav .navLi.shopLi a:hover, header .header-main .header-nav .navLi.shopLi a:focus {
+	background-color: #009432;
+}
+header .header-main .header-nav .navLi.reserveLi {
+	background-color: #EE5A24;
+}
+
+header .header-main .dropdown {
+	background-color: rgba(0,0,0,.9);
+	top: 130px;
+	position: absolute;
+	right: -1060px;
+	padding: 30px 15px;
+	width: 500px;
+	z-index: 2;
+	box-shadow: 0 7px 7px -7px #999;
+	-webkit-transition: .3s;
+	transition: .3s;
+}
+
+.dropdownShow {
+	right: 15px !important;
+}
+
+header .header-main .dropdown > ul {
+	float: left;
+}
+
+header .header-main .dropdown ul.right {
+	padding-left: 50px;
+}
+
+header .header-main .dropdown > ul img.dropdownIcon {
+	width: 22px;
+	margin-right: 8px;
+}
+
+header .header-main .dropdown.visitDropdown {
+	width: 1000px;
+	padding: 30px 0;
+}
+
+header .header-main .dropdown.visitDropdown .fa-caret-down {
+	color: #FF9900;
+	right: 477px;
+}
+header .header-main .dropdown.thingsToDoDropdown .fa-caret-down {
+	color: #6599FF;
+	right: 364px;
+}
+header .header-main .dropdown.aboutUsDropdown .fa-caret-down {
+	color: #e5c100;
+	right: 229px;
+}
+
+header .header-main .dropdown.visitDropdown ul.visitDropSec li:nth-child(2) {
+	margin-top: 10px;
+}
+
+header .header-main .dropdown.visitDropdown ul.visitDropLeft li:nth-child(2) {
+	margin-top: 20px;
+	border-top: 1px solid #333;
+	padding-top: 7px;
+}
+
+header .header-main .dropdown.visitDropdown ul.visitDropSec {
+	float: left;
+	width: 33.333333%;
+	padding: 0 30px;
+}
+
+header .header-main .dropdown.visitDropdown ul.visitDropSec .visitColImg {
+	height: 160px;
+	overflow: hidden;
+	position: relative;
+}
+
+header .header-main .dropdown.visitDropdown ul.visitDropSec .visitColImg a {
+	height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    color: transparent;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+header .header-main .dropdown.visitDropdown ul.visitDropSec .visitColImg a:hover {
+	-ms-transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+header .header-main .dropdown.visitDropdown ul.visitDropSec .visitColImg a span {
+	color: #336600;
+	position: absolute;
+	bottom: 0;
+    background-color: #fff;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+header .header-main .dropdown.visitDropdown ul.visitDropSec .visitColImg a span .dropdownIcon {
+	width: 20px;
+	position: relative;
+	top: -1px;
+}
+
+header .header-main .dropdown.visitDropdown ul.visitDropMid {
+	border-left: 1px solid #333;
+	border-right: 1px solid #333;
+}
+
+header .header-main .dropdown.visitDropdown ul.visitDropLeft .visitColImg a {
+	background-image: url(images/map-finder.jpg);
+}
+header .header-main .dropdown.visitDropdown ul.visitDropMid .visitColImg a {
+	background-image: url(images/small/family-camping2.jpg);
+}
+header .header-main .dropdown.visitDropdown ul.visitDropRight .visitColImg a {
+	background-image: url(images/small/family-picnic.jpg);
+}
+
+header .dropdown .fa-caret-down {
+	font-size: 45px;
+    position: absolute;
+    top: -19px;
+    width: 20px;
+    cursor: pointer;
+}
+
+header .header-main .dropdown a {
+	color: #ccc;
+	padding: 7px 0;
+	display: block;
+	text-decoration: none !important;
+}
+
+header .header-main .dropdown a:hover {
+	color: #fff;
+}
+
+header .browseParksWrap {
+	background: rgba(0,0,0,.9);
+    color: #eee;
+    width: 170px;
+    position: absolute;
+    right: 15px;
+    top: 130px;
+    border: 1px solid #ccc;
+    border-top: none;
+    z-index: 1;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+header .browseParksWrap .browseParksToggle {
+	font-size: 14px;
+	cursor: pointer;
+	border-bottom: 1px solid #ccc;
+	position: relative;
+	padding: 7px 0;
+	margin-bottom: 0;
+	z-index: 1;
+}
+
+header .browseParksWrap .browseParksToggle .fa-arrow-down {
+	position: absolute;
+	right: 9px;
+	top: 16px;
+	-webkit-transition: .3s;
+	transition: .3s;
+}
+
+header .browseParksWrap .browseParksToggle a:hover {
+	background-color: transparent;
+}
+
+header .browseParksWrap a {
+	color: #ddd;
+	padding: 5px 10px;
+	display: block;
+	text-decoration: none !important;
+	-webkit-transition: .3s;
+	transition: .3s;
+}
+
+header .browseParksWrap a:hover {
+	background-color: rgba(255,255,255,.6);
+	color: #fff;
+}
+
+header .browseParksWrap .browseParksDropdown {
+	height: 0px;
+    margin: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+header .browseParksWrap .browseParksDropdown li:first-child {
+	margin-top: 10px;
+}
+
+header .browseParksWrap .browseParksDropdownShow {
+	height: 350px;
+}
+
+header .hamburger {
+	width: 34px;
+	position: absolute;
+	-webkit-transition: .3s;
+	transition: .3s;
+	right: 15px;
+	top: 0;
+	height: 100%;
+	padding: 3px;
+	padding-top: 48px;
+	display: none;
+}
+header .hamburgerDark {
+	background-color: rgba(0,0,0,.9);
+}
+header .hamburger .bar {
+	display: block;
+	width: 100%;
+	height: 3px;
+	margin-bottom: 5px;
+	position: relative;
+	border-radius: 3px;
+	background-color: #fff;
+	-webkit-transition: .3s;
+	transition: .3s;
+}
+
+header .hamburger .barOneEffect {
+	background-color: transparent !important;
+}
+header .hamburger .barTwoEffect {
+	background-color: #e54e00 !important;
+	-webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+header .hamburger .barThreeEffect {
+	background-color: #e54e00 !important;
+	-webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+    bottom: 8px;
+}
+header .mobileSearchMag {
+	background: rgba(0,0,0,.8);
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    right: 15px;
+    top: 35px;
+    padding: 9px 15px 10px 15px;
+    box-sizing: content-box;
+    cursor: pointer;
+    display: none;
+}
+
+/*STICKY!!*/
+.stickyHeader {
+	background: rgba(51,102,0,.95) !important;
+    height: 80px !important;
+    border-bottom: 1px solid #fff !important;
+}
+.fprLogoSticky {
+	top: -100px !important;
+}
+.vspTextSticky {
+	margin-top: -6px !important;
+	margin-left: -100px !important;
+}
+.topAnchSticky {
+	padding-top: 13px !important;
+    padding-bottom: 11px !important;
+}
+.dropdownSticky, .browseParksWrapSticky {
+	top: 80px !important;
+}
+/***/
+
+/*************************************/
+
+.headingBorderBottom {
+	padding-bottom: 15px;
+	border-bottom: 1px solid #ccc;
+	font-family: "MyWebFontBold";
+}
+
+.ulSitemap {
+	padding-left: 0 !important;
+}
+
+.ulSitemap li {
+	list-style: none !important;
+	padding-left: 10px;
+	line-height: 20px !important;
+	margin-bottom: 5px;
+	position: relative;
+}
+
+.ulSitemap li.siteMapCatPush, .ulSitemap li.siteMapCatPush a {
+	margin-top: 15px;
+}
+.ulSitemap li.breakPush {
+	margin-top: 0;
+}
+
+.ulSitemap li .fa-angle-right {
+	position: absolute;
+	left: 0;
+	top: 3px;
+}
+
+
+.orangeBtn {
+	background-color: #FF9900;
+	color: #fff !important;
+	-webkit-transition: .3s;
+	transition: .3s;
+}
+
+.orangeBtn:hover {
+	background-color: #e65c00;
+}
+
+/******Google Search Input***************/
+.searchWrap {
+width: 220px;
+position: absolute;
+right: 15px;
+top: 5px;
+}
+.gsc-search-button-v2, .gsc-search-button-v2:hover, .gsc-search-button-v2:focus {
+background-color: #ddd !important;
+border: none !important;
+}
+.gsc-search-button-v2 {
+padding: 6px 15px !important;
+}
+.gsc-search-button-v2 svg {
+fill: #336600 !important;
+}
+.gsst_b {
+display: none;
+}
+/*************************/
+
+
+
+.wrap.bgImg {
+	background-color: #ccc;
+}
+
+main {
+	margin-top: 110px;
+}
+
+main.textPage {
+	margin-top: 120px;
+	padding: 0 15px;
+}
+
+.column2 {
+	display: inline-block;
+	width: 49%;
+	margin-bottom: 0 !important;
+	vertical-align: top;
+}
+
+.column3 {
+	display: inline-block;
+	width: 32%;
+	margin-bottom: 0 !important;
+	vertical-align: top;
+}
+
+.smallCustom {
+	font-size: 12px;
+	font-weight: 100;
+}
+
+main.parkPage {
+	background-color: #ddd;
+	padding: 0 15px;
+	margin-top: 120px;
+}
+
+.mainSticky {
+	margin-top: 80px !important;
+}
+
+.expanded {
+	background-color: #f2dede;
+	border-color: #ebccd1;
+	color: #a94442 !important;
+}
+
+/*interactive photo displays*/
+.interactivePhotoWrap {
+	height: auto !important;
+}
+
+.interactivePhotoWrap .interactivePhoto {
+	width: 500px;
+	margin-bottom: 10px;
+}
+/*******/
+
+div.aw-widget-current-inner {
+	z-index: 0;
+}
+
+main.parkPage .tabDesc .col {
+	float: left;
+	width: 33.3333%;
+	padding: 0 15px;
+	margin: 30px 0;
+}
+
+main.parkPage #parkInfoDesc .col {
+	padding-left: 45px;
+	border-right: 1px solid #ddd;
+}
+main.parkPage #parkInfoDesc .col:nth-child(2) {
+	border-right: none;
+}
+main.parkPage #parkInfoDesc .col:nth-child(3) {
+	background-color: #f2dede;
+}
+
+main.parkPage #parkInfoDesc .col:nth-child(3) ul li {
+	line-height: initial;
+	margin: 5px 0;
+	font-size: 15px;
+}
+
+
+main.parkPage #parkInfoDesc .col ul {
+	padding-left: 25px;
+}
+
+main.parkPage #parkInfoDesc .col ul li {
+	list-style: initial;
+}
+
+main.parkPage #parkInfoDesc .col:last-child {
+	border-right: none;
+}
+
+main.parkPage #parkInfoDesc .infoTabBottom {
+	clear: both;
+	padding: 20px 0 55px;
+	border-top: 1px solid #ddd;
+	margin: 0 15px;
+}
+
+main.parkPage #parkInfoDesc .infoTabBottom .iconsWrap {
+	float: left;
+}
+
+main.parkPage #parkInfoDesc .infoTabBottom .iconsWrap img {
+	margin: 0 5px 5px 0;
+}
+
+main.parkPage #parkInfoDesc .infoTabBottom .btn {
+	float: right;
+	margin: 10px 0;
+}
+
+main.parkPage #gettingHereDesc .left {
+	width: 60%;
+}
+
+main.parkPage #gettingHereDesc .right {
+	width: 40%;
+}
+
+main.parkPage #gettingHereDesc .right iframe {
+	width: 100%;
+	height: 200px;
+	border: none;
+}
+
+.offSeasonCampingRequestForm {
+	width: 600px;
+	height: 1000px;
+	border: 1px solid #ccc;
+}
+
+.vidStyling {
+	float: right;
+	margin-left: 10px;
+	border: none;
+	height: 200px;
+	width: 350px;
+}
+
+.vidStyling.noFloat {
+	float: none;
+	margin: 0;
+}
+
+.photoInternBioPhoto {
+	float: left;
+	margin-right: 20px;
+	width: 100px;
+}
+
+
+main.parkPage .tabDescWrap {
+	clear: both;
+}
+
+main.parkPage .tabsWrap .tab {
+	background-color: #999;
+	color: #ddd;
+	float: left;
+	border-left: 1px solid #000;
+	padding: 8px 5px;
+	width: 25%;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 500;
+	letter-spacing: 1px;
+	cursor: pointer;
+	-webkit-transition: .3s;
+	transition: .3s;
+}
+
+main.parkPage .tabsWrap .tab .blankAnch {
+	color: #ddd;
+	-webkit-transition: .3s;
+	transition: .3s;
+	text-decoration: none !important;
+}
+
+main.parkPage .tabsWrap .tab.tabThird {
+	width: 33.333333%;
+}
+
+main.parkPage .tabsWrap .tab .fa-arrow-right {
+	display: none;
+	float: right;
+	margin-top: 3px;
+	color: #999;
+	-webkit-transition: .3s;
+	transition: .3s;
+	-webkit-transform: rotate(90deg);
+  	-moz-transform: rotate(90deg);
+  	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+main.parkPage .tabsWrap .tab:hover, main.parkPage .tabsWrap .tab:hover .blankAnch {
+	color: #fff;
+}
+
+
+main.parkPage .tabsWrap .tab.active {
+	background-color: #fff;
+	color: #333;
+}
+
+main.parkPage .tabsWrap .tab.active .blankAnch {
+	color: #333;
+}
+
+
+main.parkPage .tabsWrap .tab:first-child {
+	border-left: none;
+}
+
+main.parkPage .tabsWrap .tab .fa {
+	margin-right: 5px;
+	font-size: 16px;
+}
+
+main.parkPage .tabDesc {
+	background-color: #fff;
+	border-radius: 0 0 5px 5px;
+	display: none;
+}
+
+main.parkPage #mapsDesc .fa {
+	left: 0;
+}
+
+.activeDesc {
+	display: block !important;
+}
+
+main.parkPage .welcomeSec {
+	clear: both;
+}
+
+main.parkPage .welcomeSec>div {
+	float: left;
+	margin: 50px 0;
+}
+
+main.parkPage .welcomeSec .left {
+	width: 75%;
+	padding: 15px;
+	background-color:#fff;
+	box-shadow: 0 1px 2px 0 #333;
+	border-radius: 5px;
+}
+
+main.parkPage .welcomeSec .left p {
+	line-height: 26px;
+}
+
+.poyRibbon {
+	float: right;
+	width: 80px;
+	margin-left: 10px;
+}
+
+.poyRibbon.poyLeft {
+	float: left;
+	margin-left: 0;
+	margin-right: 10px;
+}
+
+main.parkPage .welcomeSec .parkTextPhoto {
+	float: right;
+	width: 300px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	border: none;
+}
+
+main.parkPage .welcomeSec .parkTextPhoto.left {
+	float: left;
+    border: none;
+    width: 300px;
+    box-shadow: none;
+    padding: 0;
+    margin-left: 0;
+    border-radius: 0;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+main.parkPage .welcomeSec .parkTextPhoto.small {
+	width: 200px !important;
+	margin-left: 10px !important;
+}
+
+main.parkPage .welcomeSec .parkTextPhoto.small.left {
+	margin-right: 10px !important;
+	margin-left: 0 !important;
+}
+
+main.parkPage .welcomeSec .right {
+	width: 25%;
+	padding-left: 20px;
+}
+
+main.parkPage .welcomeSec .right .infoBlock {
+	padding: 15px;
+	margin-bottom: 20px;
+	border-radius: 3px;
+	background-color: #fff;
+	color: #333;
+	border: 1px solid #ccc;
+}
+
+main.parkPage .welcomeSec .right .infoBlock ul li ul {
+	margin-top: 8px;
+}
+
+main.parkPage .welcomeSec .right .infoBlock ul li ul li {
+	list-style: circle;
+}
+
+main.parkPage .welcomeSec ul {
+	padding-left: 20px;
+}
+
+main.parkPage .welcomeSec ul li {
+	list-style: disc;	
+	line-height: 26px;
+}
+
+main.parkPage .welcomeSec .right .infoBlock ul li {
+	line-height: 20px;
+	margin-bottom: 8px;
+}
+
+main.parkPage .tabDesc .sec {
+	margin-bottom: 12px;
+	font-size: 15px;
+	position: relative;
+}
+
+main.parkPage .tabDesc .sec img {
+	position: absolute;
+	left: -32px;
+	width: 20px;
+}
+
+main.parkPage .tabDesc#mapsDesc {
+	padding: 40px 15px;
+}
+
+main.parkPage .tabDesc#mapsDesc .sec {
+	padding-left: 32px;
+}
+
+main.parkPage .tabDesc .sec:last-child {
+	margin-bottom: 0;
+}
+
+main.parkPage .tabDesc .sec .fa, .dogIcon {
+	position: absolute;
+	font-size: 20px;
+	color: #999;
+	left: -30px;
+}
+
+.who-we-arePhoto {
+	float: left;
+	width: 180px;
+	margin-right: 15px;
+}
+
+.who-we-arePhoto img {
+	width: 100%;
+}
+
+
+.parkPagePhotoIcon {
+	width: 25px;
+}
+
+main.parkPage #activitiesDesc {
+	padding: 40px 50px;
+}
+
+main.parkPage #activitiesDesc .sec:last-child {
+	margin-bottom: 0;
+}
+
+main.parkPage #activitiesDesc .sec .parkPagePhotoIcon {
+	position: absolute;
+	left: -36px;
+}
+
+main.parkPage #activitiesDesc .sec .parkPagePhotoIcon.hikingIcon {
+	top: -2px;
+}
+
+main.parkPage #activitiesDesc .sec .parkPagePhotoIcon.swimmingIcon, main.parkPage #activitiesDesc .sec .parkPagePhotoIcon.horseshoeIcon {
+	top: 2px;
+}
+
+main.parkPage .tabDesc .dogIcon {
+	left: -37px;
+}
+
+.carouselWrap .carousel {
+	z-index: 1;
+} 
+
+#myCarousel .welcomeOverlay {
+	position: absolute;
+	color: #fff;
+	z-index: 1;
+	letter-spacing: 1px;
+	width: 100%;
+	background: rgba(0,0,0,.3);
+	padding: 10px 15px;
+	bottom: 0;
+	box-shadow: 0px 2px 4px 0px #999;
+}
+
+main.parkPage #myCarousel .welcomeOverlay {
+	box-shadow: none;
+}
+
+
+/*landing page carousel overlay*/
+.carouselWrap.landingPage .carousel-control {
+	width: 2%;
+}
+
+.carouselWrap.landingPage .carousel-control .glyphicon {
+	width: auto;
+	left: 0;
+	right: -25px;
+}
+
+.carouselWrap.landingPage .carousel-control .glyphicon.glyphicon-chevron-right {
+	right: 0;
+	left: -25px;
+}
+
+.carouselWrap.landingPage .landing-carousel-overlay {
+	position: absolute;
+    color: #fff;
+    background-color: rgba(0,0,0,.3);
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+}
+
+.carouselWrap.landingPage .landing-carousel-overlay h1 {
+	margin-top: 0;
+	letter-spacing: 2px;
+	font-family: 'patua-one';
+	margin-bottom: 15px;
+	font-size: 44px;
+}
+
+.carouselWrap.landingPage .landing-carousel-overlay.box {
+	background-color: rgba(0,0,0,.2);
+	width: 400px;
+    border: 5px solid #fff;
+    padding: 20px;
+    right: 5%;
+	top: 150px;
+	bottom: auto;
+}
+
+.carouselWrap.landingPage .landing-carousel-overlay.box h1 {
+	text-shadow: 1px 1px 3px #333;
+	line-height: 50px;
+}
+
+.carouselWrap.landingPage .landing-carousel-overlay.box.left {
+	right: auto;
+	left: 5%;
+}
+
+.carouselWrap.landingPage .landing-carousel-overlay .carousel-btn {
+	color: #fff;
+	padding: 8px 15px;
+	font-size: 16px;
+	transition: .3s;
+}
+
+.carouselWrap.landingPage .landing-carousel-overlay.default-overlay h1 {
+	margin-bottom: 0;
+}
+
+.carouselWrap.landingPage .landing-carousel-overlay.default-overlay h2 {
+	font-size: 22px;
+	letter-spacing: 1px;
+	margin-top: 10px;
+}
+
+.carouselWrap.landingPage .landing-carousel-overlay .carousel-btn.carousel-btn-orange {
+	background-color: #FF9900;
+}
+
+.carouselWrap.landingPage .landing-carousel-overlay .carousel-btn.carousel-btn-orange:hover {
+	background-color: #e58900;
+}
+
+.carouselWrap.landingPage .landing-carousel-overlay .carousel-btn.carousel-btn-red {
+	background-color: #e54e00;
+}
+
+.carouselWrap.landingPage .landing-carousel-overlay .carousel-btn.carousel-btn-red:hover {
+	background-color: #ce4600;
+}
+
+.carouselWrap.landingPage .landing-carousel-overlay .carousel-btn.carousel-btn-blue {
+	background-color: #6599FF;
+}
+
+.carouselWrap.landingPage .landing-carousel-overlay .carousel-btn.carousel-btn-blue:hover {
+	background-color: #5a89e5;
+}
+
+.carouselWrap.landingPage .landing-carousel-overlay .carousel-btn.carousel-btn-yellow {
+	background-color: #e5c100;
+}
+
+.carouselWrap.landingPage .landing-carousel-overlay .carousel-btn.carousel-btn-yellow:hover {
+	background-color: #cead00;
+}
+
+.carouselWrap.landingPage .landing-carousel-overlay .carousel-btn.carousel-btn-navy {
+	background-color: #003366;
+}
+
+.carouselWrap.landingPage .landing-carousel-overlay .carousel-btn.carousel-btn-navy:hover {
+	background-color: #002d5b;	
+}
+
+/*********END***********/
+
+.toggleControls {
+	position: absolute;
+	right: 15px;
+	top: 5px;
+	cursor: pointer;
+	color: #aaa;
+}
+
+.toggleControls .fa-arrow-up {
+	display: none;
+	position: absolute;
+	left: -225px;
+	-webkit-transform: rotate(270deg);
+  	-moz-transform: rotate(270deg);
+  	-o-transform: rotate(270deg);
+	transform: rotate(270deg);
+}
+
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+	min-height: 100px;
+	width: 100%;
+	display: block;
+}
+
+.carousel-inner>.item {
+	width: 100% !important;
+}
+
+#myCarousel .welcomeOverlay h1 {
+	font-size: 46px;
+	font-weight: normal;
+	text-shadow: 1px 1px 3px #000;
+}
+.parkCarousel .welcomeOverlay h1 span {
+	font-weight: bold;
+	text-transform: uppercase
+}
+
+#myCarousel .welcomeOverlay h3 {
+	text-shadow: 1px 1px 3px #000;
+}
+
+.carousel-caption {
+	width: 100%;
+	left: 0 !important;
+	text-align: right;
+	padding-right: 30px;
+	padding-bottom: 0;
+	z-index: 0;
+	text-shadow: 1px 1px 3px #000;
+}
+
+.carousel-indicators {
+	width: 100%;
+	left: 0 !important;
+	text-align: right;
+	padding-right: 30px;
+	margin-left: 0;
+	bottom: -5px;
+	z-index: 1;
+}
+
+.parkCarousel .carousel-caption {
+	display: none;
+}
+
+.carousel-control {
+	background-image: none !important;
+}
+
+/*********************************/
+
+
+.mission {
+	background-color:#fefefe;
+	padding: 30px 15px 40px;
+}
+
+.mission .landingWelcomeSec, .mission .newsFeedSec {
+	float: left;
+	padding: 0 30px;
+}
+
+.mission .landingWelcomeSec {
+	width: 60%;
+	padding-left: 0;
+	padding-bottom: 20px;
+	font-size: 16px;
+}
+
+.welcomeSecButtonsWrap {
+	clear: both;
+}
+.welcomeSecButtonsWrap a {
+	display: block;
+	width: 49.5%;
+	margin-right: 1%;
+	float: left;
+	position: relative;
+	margin-bottom: 10px;
+	border-radius: 6px 6px 6px 0;
+	color: #fff !important;
+	-webkit-transition: .3s;
+	transition: .3s;
+}
+
+.welcomeSecButtonsWrap a:hover img, .welcomeSecButtonsWrap a:hover span {
+	border-color: #FF9900;
+}
+
+.welcomeSecButtonsWrap a:nth-child(2):hover img, .welcomeSecButtonsWrap a:nth-child(2):hover span {
+	border-color: #6599FF;
+}
+.welcomeSecButtonsWrap a:nth-child(3):hover img, .welcomeSecButtonsWrap a:nth-child(3):hover span {
+	border-color: #e5c100;
+}
+.welcomeSecButtonsWrap a:nth-child(4):hover img, .welcomeSecButtonsWrap a:nth-child(4):hover span {
+	border-color: #e54e00;
+}
+
+.welcomeSecButtonsWrap a:nth-child(2), .welcomeSecButtonsWrap a:nth-child(4) {
+	margin-right: 0;
+}
+
+.welcomeSecButtonsWrap a span {
+	color: #fff !important;
+	text-shadow: 1px 1px 3px #000;
+	position: absolute;
+	background-color: rgba(0,0,0,.4);
+	bottom: 1px;
+	left: 1px;
+	padding: 5px;
+	border-top: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	-webkit-transition: .3s;
+	transition: .3s;
+}
+
+.welcomeSecButtonsWrap a img {
+	width: 100%;
+	border-radius: 5px 5px 5px 0;
+	border: 1px solid #ccc;
+	display: block;
+	height: 100%;
+	-webkit-transition: .3s;
+	transition: .3s;
+}
+
+.welcomeSecButtonsWrap a:hover span {
+	background-color: rgba(0,0,0,.7);
+}
+
+
+/***********/
+
+.mission .newsFeedSec {
+	width: 40%;
+	padding-right: 0;
+	border-left: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+#welcomeVideo {
+	width: 400px;
+	height: 225px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	border: none;
+	float: right;
+}
+
+/*******NEWS FEED*************/
+
+
+.newsFeedGrid {
+	max-height: 500px;
+	overflow-y: scroll;
+}
+
+.newsFeedGrid .item {
+	background-color: #eee;
+	padding: 10px;
+	margin-bottom: 10px;
+	min-height: 130px;
+}
+
+.newsFeedGrid .item a {
+}
+
+.newsFeedGrid .item a:hover {
+	text-decoration: underline;
+}
+.newsFeedGrid .item .newsFeedText p {
+	font-size: 14px !important;
+	line-height: 22px !important;
+}
+
+.newsFeedGrid .item .title {
+	font-family: 'MyWebFontBold';
+}
+
+.newsFeedGrid .item .imageWrap {
+	float: left;
+	max-width: 130px;
+	width: 30%;
+}
+
+.newsFeedGrid .item img {
+	width: 90%;
+}
+
+.green-tableHead {
+	background-color: #1a3300;
+	color: #fff;
+}
+
+/*******END NEWS FEED*************/
+
+main.parkPage .mission {
+	padding: 0;
+	box-shadow: 0 1px 2px 0 #333;
+	border-radius: 0 0 5px 5px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	clear:both;
+}
+
+.mission p {
+	line-height: 28px;
+}
+
+main.textPage .pageTitle {
+	margin: 0 -15px;
+	padding-bottom: 10px;
+	background-size: cover;
+	height: 290px;
+	text-align: center;
+	padding-top: 110px;
+	border-bottom: 1px solid darkgreen;
+}
+
+main.textPage .pageTitle.camping {
+	background-image: url(images/wide/family-camping2.jpg);
+}
+main.textPage .pageTitle.day-use {
+	background-image: url(images/wide/day-use.jpg);
+}
+main.textPage .pageTitle.fees {
+	background-image: url(images/wide/fees.jpg);
+}
+main.textPage .pageTitle.cabins {
+	background-image: url(images/wide/cabin.jpg);
+}
+main.textPage .pageTitle.burton-cabins {
+	background-image: url(images/wide/burton-popasquash-cabin.jpg);
+}
+main.textPage .pageTitle.cottages {
+	background-image: url(images/wide/crystal-cottage.jpg);
+}
+main.textPage .pageTitle.hiking {
+	background-image: url(images/wide/underhill-sign-hike.jpg);
+}
+main.textPage .pageTitle.swimming {
+	background-image: url(images/wide/swimming2.jpg);
+}
+main.textPage .pageTitle.trail-running {
+	background-image: url(images/wide/trail-running.jpg);
+}
+main.textPage .pageTitle.boating {
+	background-image: url(images/wide/grr-people-canoeing.jpg);
+}
+main.textPage .pageTitle.fishing {
+	background-image: url(images/wide/boy-woman-fishing.jpg);
+}
+main.textPage .pageTitle.shop {
+	background-image: url("images/wide/grr-people-canoeing.jpg");
+}
+main.textPage .pageTitle.reservations {
+	background-image: url(images/wide/coolidge-leanto.jpg);
+}
+main.textPage .pageTitle.winter-activities {
+	background-image: url(images/wide/snowshoeing.jpg);
+}
+main.textPage .pageTitle.events-programs, main.textPage .pageTitle.groton-nature {
+	background-image: url(images/wide/groton-interpretive-program.jpg);
+}
+main.textPage .pageTitle.venture-vermont {
+	background-image: url("images/wide/vv1.jpg");
+}
+main.textPage .pageTitle.other-activities {
+	background-image: url(images/wide/horseback-riding.jpg);
+}
+main.textPage .pageTitle.biking {
+	background-image: url(images/wide/biking.jpg);
+}
+main.textPage .pageTitle.family-fun {
+	background-image: url(images/wide/camelshump-fam-hike.jpg);
+}
+main.textPage .pageTitle.enjoying-nature {
+	background-image: url(images/wide/dandelions.jpg);
+}
+main.textPage .pageTitle.photos-video {
+	background-image: url(images/wide/ice-crystals.jpg);
+}
+main.textPage .pageTitle.history {
+	background-image: url(images/wide/ccc-building-foundation.jpg);
+}
+main.textPage .pageTitle.employment {
+	background-image: url(images/wide/elmore-2013.jpg);
+}
+main.textPage .pageTitle.volunteering {
+	background-image: url("images/wide/volunteers_2019_group.jpg");
+}
+main.textPage .pageTitle.publications, main.textPage .pageTitle.fourOhFour {
+	background-image: url(images/wide/map.jpg);
+}
+main.textPage .pageTitle.contactUs {
+	background-image: url(images/wide/rangers-cs.jpg);
+}
+main.textPage .pageTitle.support {
+	background-image: url(images/wide/grr-foliage.jpg);
+}
+main.textPage .pageTitle.happy-camper {
+	background-image: url(images/wide/happy-camper.jpg);
+}
+
+main.textPage .pageTitle.who-we-are {
+	background-image: url(images/wide/allstaff2019.jpg);
+}
+
+main.textPage .pageTitle.photo-interns {
+	background-image: url(images/wide/bomoseen-berries.jpg);
+}
+main.textPage .pageTitle.vtstateparkscooks {
+	background-image: url(images/vtstateparkscooks/banner.jpg);
+}
+
+main.textPage .pageTitle.vtstateparkscooks-basics {
+	background-image: url(images/vtstateparkscooks/banner.jpg);
+}
+
+main.textPage .pageTitle.vtstateparkscooks-recipes {
+	background-image: url(images/vtstateparkscooks/banner.jpg);
+}
+
+main.textPage .pageTitle.vtstateparkscooks-videos {
+	background-image: url(images/vtstateparkscooks/banner.jpg);
+}
+
+main.textPage .pageTitle.survey {
+	background-image: url(images/wide/survey.jpg);
+}
+
+
+
+main.textPage .pageTitle h1 {
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	text-shadow: 3px 3px 2px #333;
+}
+
+#textWrap {
+	position: relative;
+	height: 800px;
+	padding-top: 30px;
+}
+#textWrap.full-width {
+	height: auto;
+	position: static;
+}
+#textWrap .backToTop {
+	background: rgba(0,0,0,.6);
+	color: #eee;
+	cursor: pointer;
+	position: fixed;
+	right: 15px;
+	bottom: 20px;
+	padding: 5px;
+	z-index: 2;
+	text-align: center;
+	visibility: hidden;
+}
+#textWrap .backToTop p {
+	margin: 0;
+}
+
+#textWrap p {
+	font-size: 14px;
+	line-height: 22px;
+}
+
+#textWrap > div {
+	float: left;
+}
+
+#textWrap .textMain {
+	width: 75%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	-webkit-overflow-scrolling: touch;
+	height: 100%;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	padding-right: 10px;
+	margin-bottom: 25px;
+}
+
+#textWrap .textMain.full-width {
+	width: 100%;
+	overflow: auto;
+	height: auto;
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+#textWrap .textMain .textSec {
+	margin-bottom: 40px;
+	clear: both;
+}
+
+#textWrap .textMain .textSec.happy-camper {
+	min-height: 210px;
+	border-bottom: 1px solid #ccc;
+}
+
+#textWrap .textMain .textSec.happy-camper:last-child {
+	border-bottom: none;
+}
+
+#textWrap .textMain .textSec.happy-camper ul, #textWrap .textMain .textSec.happy.camper ul li {
+	padding: 0;
+	list-style: none;
+}
+
+#textWrap .textMain .textSec.block {
+	background-color: #eee;
+	width: 700px;
+	margin: 0 auto 40px;
+	border: 1px solid #ccc;
+	padding: 15px;
+}
+
+#textWrap .textMain .textSec.block ul {
+	clear: both;
+}
+
+
+#textWrap .textPagePhoto {
+	float: left;
+	width: 300px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+
+#textWrap .textPagePhotoCook {
+	float: left;
+	width: 300px;
+	margin-right: 20px;
+	margin-bottom: 10px;
+}
+
+
+
+figcaption {
+	font-style: italic;
+	font-size: 12px;
+}
+
+.figureVideo {
+	margin-bottom: 20px;
+}
+
+#textWrap .textPagePhoto img, main.parkPage .welcomeSec .parkTextPhoto img {
+	width: 100%;
+}
+
+#textWrap .textPagePhoto.small {
+	width: 250px;
+}
+
+#textWrap .textPagePhoto.x-small {
+	width: 100px !important;
+	float: left !important;
+	margin-right: 10px !important;
+	margin-bottom: 10px !important;
+}
+
+#textWrap .textPagePhoto.large {
+	width: 400px;
+}
+
+#textWrap .textPagePhoto.right {
+	float: right;
+	margin-right: 0;
+	margin-left: 10px;
+}
+
+.ccc-small-photos img {
+	height: 130px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+
+#textWrap .textMain .textSec ul, #textWrap .textMain .textSec ol {
+	padding-left: 25px;
+	margin-bottom: 20px;
+}
+
+#textWrap .textMain .textSec ul li {
+	font-size: 14px;
+	list-style: disc;
+	line-height: 26px;
+}
+#textWrap .textMain .textSec ol li {
+	list-style: inherit;
+	font-size: 14px;
+	line-height: 26px;
+}
+
+#textWrap .textMain .textSec ul li ul {
+	margin-bottom: 0;
+}
+#textWrap .textMain .textSec ul li ul li {
+	list-style: circle;
+}
+#textWrap .textMain .textSec table ul {
+	margin: 0;
+}
+
+#textWrap .textMain .textSec table ul li {
+	line-height: 24px;
+	list-style: square;
+}
+
+#textWrap .textMain .textSec h3 {
+	font-family: "MyWebFontBold";
+}
+
+#textWrap .textAside #related .fa-arrow-right {
+	color: #fff;
+	-webkit-transition: .3s;
+	transition: .3s;
+}
+
+#textWrap .textMain .textSec .sub {
+	padding-left: 25px;
+	margin: 20px 0 30px;
+	clear: both;
+}
+
+#textWrap .textMain .textSec .sub.bottomBordered {
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 10px;
+}
+
+#textWrap .textMain .textSec .tableWrap {
+	margin: 40px 0;
+}
+
+#textWrap .textMain .textSec .tableWrap:first-child {
+	margin-top: 20px;
+}
+
+#textWrap .textMain .textSec .sub h4 {
+	font-weight: bold;
+	font-family: 'MyWebFontBold';
+}
+
+
+/*photo row/grd*/
+.photoRow {
+	width: 100%;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	white-space: nowrap;
+}
+
+.photoRow.grid {
+	overflow: visible;
+	white-space: normal;
+}
+
+.photoRow .photoBlock {
+	background-color: #ddd;
+	display: inline-block;
+	/*make sure inline-block, NOT FLOAT!*/
+	width: 210px;
+	border: 1px solid #aaa;
+	padding: 5px;
+	padding-bottom: 10px;
+	margin-right: 10px;
+	height: 100%;
+	vertical-align: top;
+	height: 450px;
+	position: relative;
+}
+
+
+
+
+.photoRow .photoBlock.big {
+	height: 570px;
+}
+
+.photoRow.grid .photoBlock {
+	margin-bottom: 10px;
+}
+
+.photoRow .photoBlock .parkTitle {
+	display: block;
+	margin: 10px 0;
+}
+
+.photoRow .photoBlock .info {
+	white-space: normal;
+}
+
+.photoRow .photoBlock .info p {
+	border-bottom: 1px solid #bbb;
+}
+
+.photoRow .photoBlock .info p:last-child {
+	border-bottom: none;
+}
+
+.photoRow .photoBlock .btn {
+	position: absolute;
+	bottom: 10px;
+	width: 95%;
+}
+
+.photoRow .photoBlock .info a {
+	display: inline;
+	margin: 0;
+}
+
+.photoRow .photoBlock p {
+	line-height: 18px !important;
+}
+
+.photoRow .photoBlock img {
+	width: 100%;
+}
+/*end photo row/grid*/
+
+#textWrap .textMain .textSec .sub p {	
+	line-height: 22px;
+}
+
+#textWrap .textMain .textSec .parkRegion {
+	margin: 10px 0;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 20px;
+}
+
+#textWrap .textAside {
+	width: 25%;
+	padding-left: 50px;
+}
+
+#textWrap .textAside ul li {
+	line-height: 28px;
+	font-size: 16px;
+	border-bottom: 1px solid #ccc;
+}
+
+#textWrap .textAside ul li a {
+	text-decoration: none !important;
+}
+
+#textWrap .textAside ul li a.linkBlue {
+	color: #337ab7;
+}
+#textWrap .textAside ul li a.linkBlue:hover {
+	color: #23527c;
+	text-decoration: underline !important; 
+}
+
+#textWrap .textAside ul li.indent {
+	padding-left: 15px;
+}
+
+#textWrap .textAside ul li:last-child {
+	border-bottom: none;
+}
+
+
+/********BOTTOM PHOTO ROW*****************/
+section#bottomPhotos {
+	height: 300px;
+	text-align: center;
+	clear: both;
+}
+
+main.textPage section#bottomPhotos {
+	margin: 0 -15px;
+}
+
+main.parkPage section#bottomPhotos {
+	margin: 0 -15px;
+}
+
+section#bottomPhotos a.photo {
+	float: left;
+	width: 33.33333333%;
+	display: block;
+	height: 100%;
+	background-size: cover;
+	position: relative;
+	-webkit-transition: .3s;
+	transition: .3s;
+	height: 100%;
+	color: #fff !important;
+}
+
+section#bottomPhotos a.photo .photoOverlay {
+	background: rgba(0,0,0,.15);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	-webkit-transition: .3s;
+	transition: .3s;
+}
+
+section#bottomPhotos a.photo .photoOverlay:hover {
+	background: rgba(0,0,0,0);
+}
+
+section#bottomPhotos a.photo .photoOverlay h3 {
+	margin: 0;
+	letter-spacing: 1px;
+	padding: 20px 10px;
+	background: transparent;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	color: #eee;
+	-webkit-transition: .3s;
+	transition: .3s;
+	background: rgba(0,0,0,.6);
+}
+
+/*still not working on edge!!!*/
+section#bottomPhotos a.photo:hover, section#bottomPhotos a.photo .photoOverlay:hover, section#bottomPhotos a.photo .photoOverlay:hover h3 {
+	color: #fff !important;
+}
+
+section#bottomPhotos a.photo .photoOverlay h3 .fa {
+	margin-right: 10px;
+}
+
+section#bottomPhotos .photo.one {
+	background-image: url(images/btm-photos-template/photo-1.jpg);
+}
+section#bottomPhotos .photo.two {
+	background-image: url(images/btm-photos-template/photo-2.jpg);
+}
+section#bottomPhotos .photo.three {
+	background-image: url(images/btm-photos-template/photo-3.jpg);
+}
+
+/*shop page*/
+
+
+#shopGrid .merchItem {
+	width: 250px;
+	height: 250px;
+	position: relative;
+	padding: 10px;
+	float: left;
+	margin-bottom: 20px;
+}
+
+#shopGrid .shopSection {
+	clear: both;
+}
+
+#shopGrid .merchItem .merchAnchor {
+	position: relative;
+ 	display: block;
+}
+#shopGrid .merchItem .merchAnchor .productDetails {
+	display: block;
+	position: absolute;
+	width: 100%;
+	bottom: -20px;
+	background-color: rgba(0,0,0,.8);
+	color: #eee;
+	text-align: center;
+	-webkit-transition: .3s;
+	transition: .3s;
+}
+
+#shopGrid .merchItem .merchAnchor:hover .productDetails {
+	bottom: 0;
+	
+}
+
+#shopGrid .merchItem img {
+	width: 100%;
+}
+
+#shopGrid .merchItem .merchText {
+	text-align: center; 
+	background-color: #fff;
+	position: relative;
+	z-index: 1;
+}
+
+#shopGrid .merchItem .merchText .itemTitle {
+	font-weight: 100;
+}
+
+
+/*********PARK FINDER SEC (for everything else, refer to parkfinder.css)**********/
+section#parkFinderSec {
+	margin: 500px 0 0;
+	clear: both;
+	padding: 50px 15px;
+	background: #eee;
+	border-bottom: 1px solid #aaa;
+}
+
+section#parkFinderSec h3 {
+	text-align: center;
+	border-bottom: 1px solid #ccc;
+	width: 375px;
+	margin: 0 auto;
+	padding-bottom: 10px;
+}
+section#parkFinderSec p.instructions {
+	margin: 30px 0;
+	font-size: 16px;
+	text-align: center;
+}
+
+/****************/
+
+
+
+footer {
+	clear: both;
+	background: #1a3300;
+	position: relative;
+	z-index: 1;
+}
+
+footer .footerCol {
+	width: 33.33333%;
+	float: left;
+	padding: 20px 15px;
+	color: #ddd;
+	margin-bottom: 20px;
+}
+
+footer .footerCol ul li {
+	line-height: 28px;
+	font-size: 16px;
+	position:relative;
+	z-index: 1;
+}
+
+footer a {
+	color: #ccc;
+	-webkit-transition: .3s;
+	transition: .3s;
+	text-decoration: none !important;
+}
+
+footer a:hover {
+	color: #fff;
+	text-decoration: none;
+	padding-left: 5px;
+}
+footer a:focus {
+	color: #ccc;
+}
+
+footer h2 {
+	letter-spacing: 1px;
+	color: #fff;
+	font-size: 24px;
+}
+
+footer .footerBottom {
+	clear: both;
+	border-top: 1px solid #333;
+	font-size: 12px;
+	padding: 10px 0 20px 0;
+	margin: 0 15px;
+	position: relative;
+	z-index: 1;
+}
+
+footer .footerBottom ul {
+	display: inline-block;
+}
+
+footer .footerBottom ul.right {
+	float: right;
+}
+
+footer .footerBottom ul li {
+	display: inline-block;
+	border-right: 1px solid #fff;
+	padding-right: 6px;
+	margin-right: 5px;
+	color: #999;
+	line-height: 20px;
+}
+
+footer .footerBottom ul li:last-child {
+	border-right: none;
+	padding-right: 0;
+	margin-right: 0;
+}
+
+footer .footerBottom ul li a {
+	color: #bbb;
+}
+
+footer .footerBottom ul li a:hover {
+	text-decoration: underline !important;
+	padding: 0;
+}
+
+#downloadAppWrap {
+	clear: both;
+	padding: 0 15px;
+	margin-bottom: 10px;
+	position: relative;
+	z-index: 1;
+}
+
+#downloadAppWrap p {
+	color: #fff;
+}
+
+#downloadAppWrap a:hover {
+	padding: 0;
+}
+
+#downloadAppWrap img {
+	width: 100px;
+	height: 33px;
+}
+
+#fprFooterLink a {
+	padding: 0 !important;
+	color: #bbb;
+}
+
+#fprFooterLink a:hover {
+	color: #fff;
+}
+
+#fprFooterLink img {
+	margin-right: 5px;
+	margin-top: -3px;
+}
+
+.cbCopyright {
+	font-size: 11px;
+}
+
+.cbCopyright, .cbCopyright a {
+	color: rgba(255,255,255,.3);
+	text-decoration: none !important;
+	padding: 0 !important;
+}
+
+.cbCopyright a:hover {
+	color: rgba(255,255,255,.5);
+}
+
+
+
+
+/**************MEDIA QUERIES***************/
+
+@media screen and (max-width: 1020px) {
+	header {
+		background: rgba(51,102,0,.95) !important;
+    	height: 80px !important;
+    	border-bottom: 1px solid #fff !important;
+	}
+	header .header-main .header-nav {
+		padding: 0 15px;
+	}
+	header .header-main .header-left a img.fprLogo {
+		display: none;
+	}
+	header .header-main .header-left a .vspText {
+		margin-left: 0 !important;
+		margin-top: -5px !important;
+	}
+	header .header-nav {
+		float: none;
+	    position: absolute;
+	    background-color: rgba(0,0,0,.9);
+	    width: 100%;
+	    right: 0;
+	    top: 80px;
+	}
+	header .header-main .header-nav .navLi a.topAnch, .topAnchSticky {
+		padding-top: 10px !important;
+		padding-bottom: 10px !important;
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+	header .browseParksWrap .browseParksToggle {
+		padding: 4px 0;
+	}
+	header .header-main .dropdown, header .header-main .dropdown.visitDropdown {
+		top: 40px !important;
+		width: 100%;
+		z-index: 1;
+	}
+	.dropdownShow {
+		right: 0 !important;
+	}
+	header .header-main .dropdown.visitDropdown .fa-caret-down {
+		left: 34px;
+	}
+	header .header-main .dropdown.thingsToDoDropdown .fa-caret-down {
+		left: 142px;
+	}
+	header .header-main .dropdown.aboutUsDropdown .fa-caret-down {
+		left: 273px;
+	}
+	header .browseParksWrap {
+		top: 80px !important;
+	}
+	header .browseParksWrap .browseParksToggle .fa-arrow-down {
+		top: 12px;
+	}
+	header .mobileSearchMag {
+		display: inline;
+	}
+	.mobileSearchShow {
+		margin-top: 0 !important;
+	}
+	header .headerTopBar .headerTopBarLeft {
+		display: none;
+	}
+	.searchWrap {
+		width: 100%;
+		padding: 0 13px;
+		right: 0;
+	}
+	.customHeader {
+		margin-top: -35px;
+	}
+	main, main.textPage, main.parkPage {
+		margin-top: 85px;
+	}
+	.mobileSearchShowMain {
+		margin-top: 120px !important;
+	}
+	#main, .textPage {
+		-webkit-transition: .3s;
+		transition: .3s;
+	}
+
+	.carouselWrap.landingPage .landing-carousel-overlay.box {
+		width: 320px;
+		top: 10%;
+	}
+
+	.carouselWrap.landingPage .landing-carousel-overlay {
+		padding: 10px 15px;
+	}
+
+	.carouselWrap.landingPage .landing-carousel-overlay.box h1, .carouselWrap.landingPage .landing-carousel-overlay h1 {
+		font-size: 28px;
+		line-height: 34px;
+	}
+
+	.carouselWrap.landingPage .landing-carousel-overlay.default-overlay h2 {
+		font-size: 18px;
+	}
+
+	.carouselWrap.landingPage .landing-carousel-overlay .carousel-btn {
+		font-size: 16px;
+		padding: 5px 8px;
+	}
+
+	
+
+    .mapParkWrap .tooltip {
+        display: none !important;
+    }
+
+	#myCarousel .welcomeOverlay h1 {
+		font-size: 28px;
+		margin: 0;
+	}
+	#textWrap .textAside {
+		padding-left: 25px;
+	}
+	#textWrap .textAside ul li {
+		line-height: 25px;
+		font-size: 14px;
+	}
+
+	.mission .landingWelcomeSec, .mission .newsFeedSec {
+		width: 100%;
+		float: none;
+		padding: 0;
+		border: none;
+	}
+
+	section#parkFinderSec {
+		margin: 0;
+		border-top: 1px solid #333;
+	}
+
+	.mission .newsFeedSec {
+		margin-top: 30px;
+		background-color: #fff;
+		border-top: 1px solid #ccc;
+		clear: both;
+	}
+	.newsFeedGrid {
+		max-height: 700px;
+		border-top: 1px solid #ccc;
+		border-bottom: 1px solid #ccc;
+	}
+	.newsFeedGrid .item {
+		border: none;
+	}
+
+	.newsFeedGrid .item a {
+		color: #337ab7;
+		text-decoration: none;
+	}
+
+	/*PARKS PAGES*/
+	main.parkPage .tabDesc .col {
+		width: 50%;
+	}
+	main.parkPage #parkInfoDesc .col:nth-child(3) {
+		float: none;
+		padding: 0;
+		clear: both;
+		width: 100%;
+		padding: 5px 15px;
+		border: none;
+		margin-bottom: 0;
+	}
+
+	main.parkPage #parkInfoDesc .infoTabBottom {
+		border: none;
+	}
+
+	/*NEWS FEED*/
+	section#newsFeed .newsFeedGrid {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 790px) {
+	section#bottomPhotos a.photo {
+		width: 100%;
+		float: none;
+		height: 100px;
+		background-position: 0 -100px;
+		border-top: 1px solid #fff;
+	}
+	section#bottomPhotos a.photo:first-child {
+		border-top: none;
+	}
+	section#bottomPhotos a.photo .photoOverlay h3 {
+		height: 100%;
+		padding: 40px 0;
+	}
+	#textWrap > div {
+		float: none;
+	}
+	#textWrap {
+		height: auto;
+	}
+	#textWrap .textMain {
+		width: 100%;
+		padding: 0;
+		padding-top: 65px;
+		overflow: auto;
+		border: none;
+		-webkit-transition: .3s;
+		transition: .3s;
+	}
+	.textMainPushDown {
+		padding-top: 325px !important;
+	}
+	#textWrap .textAside {
+		width: 100%;
+		padding: 0;
+		position: absolute;
+		top: 0;
+		border-bottom: 1px solid #ccc;
+	}
+	#textWrap .textAside #related {
+		cursor: pointer;
+		font-size: 22px;
+	}
+	#textWrap .textAside #related .fa-arrow-right {
+		color: #337ab7;
+	}
+	#textWrap .textAside .relatedUl {
+		height: 0px;
+		overflow-y: scroll;
+		background-color: #eee;
+		padding: 0 5px;
+		-webkit-transition: .3s;
+		transition: .3s;
+	}
+	#textWrap .textAside ul li {
+		font-size: 16px;
+		line-height: initial;
+		padding: 0 5px;
+		border-color: #999;
+	}
+	#textWrap .textAside ul li a {
+		display: block;
+		padding: 10px 0;
+	}
+
+	.relatedUlExpand {
+		height: 250px !important;
+	}
+	.arrowRotateDown {
+		-webkit-transform: rotate(90deg);
+  		-moz-transform: rotate(90deg);
+  		-o-transform: rotate(90deg);
+		transform: rotate(90deg) !important;
+	}
+
+	#textWrap .backToTop {
+		visibility: visible;
+	}
+
+	#textWrap .textMain .textSec.block {
+		width: 100%;
+	}
+
+
+	footer .footerCol {
+		width: 100%;
+		padding: 0 15px;
+		margin-bottom: 0;
+	}
+
+	footer .footerBottom ul {
+		width: 100%;
+	}
+
+	footer .footerBottom ul.right {
+		float: none;
+		margin: 5px 0 0;
+	}
+	img.footer-mountains {
+		bottom: 150px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	header .hamburger {
+		display: block;
+	}
+	header .header-main .dropdown.visitDropdown ul.visitDropMid {
+		border: none;
+	}
+	header .header-main .header-nav {
+		height: 100vh;
+		transition: .3s;
+		right: -1000px;
+		padding: 0;
+		padding-top: 51px;
+		background-color: rgba(0,0,0,.95);
+	}
+	header .header-main .dropdown {
+		background-color: #eee;
+		height: 100%;
+		overflow-y: scroll;
+		padding-bottom: 100px !important;
+	}
+	header .header-main .dropdown.visitDropdown ul.visitDropSec .visitColImg a span {
+		background-color: #eee;
+		position: static;
+		padding: 0;
+	}
+	header .header-main .header-nav .navLi, header .header-main .dropdown.visitDropdown ul.visitDropSec, header .header-main .dropdown > ul {
+		float: none;
+		width: 100%;
+	}
+	header .header-main .dropdown.visitDropdown ul.visitDropSec .visitColImg {
+		height: auto;
+		overflow: visible;
+	}
+	header .header-main .dropdown.visitDropdown ul.visitDropSec .visitColImg a {
+		background-image: none;
+		border-bottom: none;
+	}
+	header .header-main .dropdown.visitDropdown ul.visitDropLeft .visitColImg a {
+		margin-left: -14px;
+	    padding-left: 14px;
+	}
+	header .header-main .header-nav .navLi.reserveLi {
+		background-color: transparent;
+	}
+	header .header-main .dropdown.visitDropdown ul.visitDropSec .visitColImg a:hover {
+	    -ms-transform: scale(1);
+	    -webkit-transform: scale(1);
+	    -moz-transform: scale(1);
+	    -o-transform: scale(1);
+		transform: scale(1);
+	}
+	header .header-main .dropdown a {
+		border-bottom: 1px solid #ccc;
+		color: #333 !important;
+	}
+	header .header-main .dropdown ul.right {
+		padding-left: 0;
+	}
+	header .header-main .dropdown ul.right li:last-child a {
+		border-bottom: none;
+	}
+	header .header-main .dropdown, header .header-main .dropdown.visitDropdown {
+		top: 0 !important;
+		padding-top: 57px;
+	}
+
+	.dropdownShow {
+		right: -190px !important;
+	}
+	header .dropdown .fa-caret-down, header .header-main .dropdown > ul img.dropdownIcon {
+		display: none;
+	}
+	
+	.mobileNavSlideIn {
+		right: 0 !important;
+	}
+	header .browseParksWrap {
+		top: 80px !important;
+	    border-top: 1px solid;
+	    border: none;
+	    width: 100%;
+	    left: 1000px;
+	    background-color: #333;
+	}
+	header .browseParksWrap .browseParksToggle {
+		padding: 7px 0;
+	}
+
+	header .browseParksWrap .browseParksDropdown li {
+		border-bottom: 1px solid #333;
+		margin: 0 12px;
+	}
+
+	header .browseParksWrap .browseParksDropdown li:last-child {
+		border-bottom: none;
+	}
+
+	header .browseParksWrap a {
+		padding: 8px 12px;
+	}
+
+	header .browseParksWrap .browseParksToggle a {
+		border-bottom: none;
+	}
+	header .browseParksWrap .browseParksDropdownShow {
+		height: 100vh;
+		padding-bottom: 200px;
+	}
+
+	header .browseParksWrap .browseParksDropdown li a {
+		padding: 8px 12px;
+    	margin: 0 -12px;
+	}
+
+	header .header-main .header-nav .navLi a.topAnch, .topAnchSticky {
+		position: relative;
+		padding-left: 40px;
+		border-bottom: 1px solid #333;
+	}
+
+	.mobileMenuIcon {
+		display: block;
+	}
+
+	.browseParksMobileSlideIn {
+		left: 0px !important;
+	}
+
+	header .browseParksWrap .browseParksToggle .fa-arrow-down {
+		top: 19px;
+		right: 15px;
+	}
+	header .header-main .dropdown.visitDropdown ul.visitDropSec {
+		padding: 0 15px;
+		margin-bottom: 30px;
+	}
+	header .header-main .dropdown.visitDropdown ul.visitDropSec li:nth-child(2) {
+		margin-top: 0;
+	}
+	header .header-main .dropdown.visitDropdown ul.visitDropLeft li:nth-child(2) {
+		border-top: none;
+		padding-top: 15px;
+	}
+
+	header .header-main .dropdown.visitDropdown ul.visitDropSec li:last-child a {
+		border-bottom: none;
+	}
+
+	#myCarousel .welcomeOverlay h1 {
+		font-size: 20px;
+	}
+
+	.carousel-indicators, #myCarousel .welcomeOverlay h3 {
+		display: none;
+	}
+	.carousel-caption {
+		display: none;
+	}
+
+	header .mobileSearchMag {
+		right: 60px;
+	}
+
+	#welcomeVideo {
+		width: 100%;
+		float: none;
+		margin: 0;
+	}
+	/*text-pages*/
+	main.textPage .pageTitle {
+		height: 150px;
+		padding-top: 45px;
+	}
+	main.textPage .pageTitle h1 {
+		font-size: 24px;
+		padding: 0 15px;
+	}
+
+	/*******PARK PAGES*********/
+
+	main, main.textPage, .mainSticky, main.parkPage {
+		margin-top: 45px;
+	}
+	.mobileSearchShowMain {
+		margin-top: 80px !important;
+	}
+
+	main.parkPage .mission {
+		box-shadow: none;
+		border-radius: 0;
+		border: none;
+	}
+
+	main.parkPage .welcomeSec {
+		background-color: #ddd;
+		padding-top: 5px;
+	}
+
+	main.parkPage #parkInfoDesc .col:nth-child(2) {
+		border: none;
+	}
+
+	main.parkPage .welcomeSec .left, main.parkPage .welcomeSec .right {
+		width: 100%;
+		float: none;
+		margin-bottom: 0;
+		border-radius: 0;
+		overflow-y:hidden;
+	}
+
+	main.parkPage .welcomeSec .left {
+		box-shadow: none;
+		border: 1px solid #ccc;
+		border-bottom: none;
+	}
+
+	main.parkPage .welcomeSec .right {
+		padding: 0;
+		margin: 0;
+		clear: both;
+	}
+
+	main.parkPage .welcomeSec .right .infoBlock {
+		border-radius: 0;
+	}
+
+	main.parkPage .welcomeSec .right .infoBlock:first-child {
+		border: 1px solid #ccc;
+		border-top: none;
+	}
+
+	main.parkPage #gettingHereDesc .left, main.parkPage #gettingHereDesc .right {
+		width: 100%;
+		float: none;
+	}
+
+
+	/*******TABS**********/
+	main.parkPage .tabsWrap .tab {
+		width: 100% !important;
+		float: none;
+		border: none;
+		border-bottom: 1px solid #333;
+		text-align: left;
+		padding-left: 15px;
+	}
+	main.parkPage .tabsWrap .tab .fa-arrow-right {
+		display: block;
+	}
+
+}
+
+@media screen and (max-width: 550px) {
+	.carouselWrap.landingPage .landing-carousel-overlay.box, .carouselWrap.landingPage .landing-carousel-overlay  {
+		width: 100%;
+		bottom: 0;
+		top: auto;
+		right: auto;
+		left: 0;
+		border: none;
+		padding: 3px 10px 10px;
+	}
+
+	.carouselWrap.landingPage .landing-carousel-overlay.box h1, .carouselWrap.landingPage .landing-carousel-overlay h1 {
+		font-size: 22px;
+		margin-bottom: 10px;
+		line-height: 24px;
+	}
+
+	.carouselWrap.landingPage .landing-carousel-overlay.default-overlay h2 {
+		font-size: 15px;
+		margin-bottom: 0;
+		margin-top: 10px;
+	}
+
+	.carouselWrap.landingPage .landing-carousel-overlay .carousel-btn {
+		font-size: 14px;
+		padding: 3px 5px;
+		display: inline;
+	}
+
+	.carouselWrap.landingPage .landing-carousel-overlay.box.left {
+		left: 0;
+	}
+
+	#myCarousel .welcomeOverlay {
+		padding: 5px 15px;
+	}
+	#textWrap .textPagePhoto.large {
+		width: 100%;
+	}
+
+	.column2, .column3 {
+		display: block;
+		width: 100%;
+		margin-bottom: 0 !important;
+	}
+
+	.vidStyling {
+		width: 100%;
+		float: none;
+		margin: 0;
+	}
+
+	.welcomeSecButtonsWrap a {
+		width: 100%;
+		margin-right: 0;
+		float: none;
+	}
+
+	#textWrap .textMain .textSec.block .vidStyling {
+		float: none;
+	}
+
+	.photoInternBioPhoto {
+		width: 150px;
+	}
+
+	.ulSitemap li.breakPush {
+		margin-top: 15px;
+	}
+	.interactivePhotoWrap {
+		padding-top: 5px !important;
+	}
+
+	.interactivePhotoWrap .interactivePhoto {
+		width: 100%;
+	}
+	.tableWrapScroll {
+		overflow-x: scroll;
+	}
+}
+
+
+@media screen and (max-width: 450px) {
+	.carouselWrap.landingPage .landing-carousel-overlay.box h1, .carouselWrap.landingPage .landing-carousel-overlay h1 {
+		font-size: 18px;
+	}
+	.dropdownShow {
+		right: -140px !important;
+	}
+	header .header-main .header-nav .navLi a.topAnch, .topAnchSticky {
+		font-size: 10px;
+		padding-left: 35px;
+		padding-top: 20px !important;
+		padding-bottom: 20px !important;
+	}
+
+	.mobileMenuIcon {
+		top: 20px;
+		font-size: 14px;
+	}
+
+	header .header-main .header-nav .navLi a.topAnch.thingsToDoAnch .mobileMenuIcon {
+		width: 18px;
+    	top: 17px;
+    	left: 8px;
+	}
+
+	header .header-main .dropdown {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	header .header-main .dropdown a {
+		font-size: 12px;
+		letter-spacing: 1px;
+	}
+	
+
+	header .header-main .header-left a .vspText {
+		text-transform: uppercase;
+    	font-size: 24px;
+    	padding-top: 5px;
+	}
+	
+
+	#vidWrap {
+		width: 100%;
+		height: 175px;
+	}
+
+	#textWrap .textMain .textSec .sub {
+		padding: 0;
+	}
+
+	.mobileTextHide, header .headerTopBar .headerTopBarLeft {
+		display: none;
+	}
+	header .headerTopBar .headerTopBarRight {
+		float: none;
+	}
+	
+	.parkFinderMobileWrap ul {
+		border-bottom: none;
+		margin-bottom: 10px !important;
+	}
+
+	.photoRow.grid .photoBlock {
+		display: block;
+		width: 100%;
+		margin-right: 0;
+		height: 100% !important;
+	}
+
+	.photoRow .photoBlock .btn {
+		position: static;
+		width: 100%;
+	}
+
+
+	.parkPageInfoGreen {
+		padding: 5px;
+	}
+
+	main.parkPage {
+		padding: 0;
+	}
+	main.parkPage .welcomeSec .left, main.parkPage .welcomeSec .right .infoBlock, main.parkPage .welcomeSec .right .infoBlock:first-child {
+		padding-left: 15px;
+		padding-right: 15px;
+		border: none;
+	}
+
+	main.parkPage .welcomeSec .right .infoBlock {
+		border-top: 1px solid #ccc;
+		margin: 0;
+	}
+
+	main.parkPage #parkInfoDesc .col {
+		width: 100%;
+		float: none;
+		border-right: none;
+	}
+
+	main.parkPage #parkInfoDesc .col:first-child {
+		margin-bottom: 12px;
+	}
+
+	main.parkPage #parkInfoDesc .col:nth-child(2) {
+		margin-top: 0;
+	}
+
+
+	main.parkPage .welcomeSec .parkTextPhoto {
+		width: 100% !important;
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+
+	main.parkPage section#bottomPhotos, .mobileMenuDropdown .mobileDropdownSec.left {
+		margin: 0;
+	}
+
+	.mobileMenuDropdown .mobileDropdownSec.left h4 {
+		border-top: 1px solid #333;
+		clear: both;
+		padding-top: 15px;
+	}
+
+	main.parkPage .welcomeSec, main.parkPage .welcomeSec .left {
+		border-top: 1px solid #aaa;
+	}
+
+
+	#textWrap .textPagePhoto, #textWrap iframe {
+		width: 100% !important;
+		float: none;
+		margin: 0;
+		margin-bottom: 10px;
+		padding: 0 !important;
+	}
+	section#newsFeed h2 {
+		font-size: 24px;
+		width: 250px;
+		margin-bottom: 30px;
+	}
+	main.textPage .pageTitle.boating {
+		background-position: -110px 0;
+	} 
+	section#bottomPhotos a.photo .photoOverlay h3 {
+		font-size: 18px;
+	}
+
+	#indexMobileOverlay {
+		position: fixed;
+		height: 100%;
+		width: 100%;
+		background-color: rgba(0,0,0,.9);
+		top: 0;
+		z-index: 1;
+		display: none;
+	}
+
+	#shopGrid .merchItem {
+		width: 100%;
+		float: none;
+		height: auto;
+	}
+	#welcomeVideo {
+		height: 100%;
+	}
+	img.footer-mountains {
+		width: 100%;
+		right: auto;
+		left: 0;
+		bottom: 25px;
+	}
+	section#parkFinderSec h3 {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	header .header-main .header-left a .vspText {
+		font-size: 20px;
+    	padding-top: 8px;
+	}
+
+	section#bottomPhotos a.photo {
+		background-position: 0 -50px;
+	}
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+   	header .header-main .dropdown.visitDropdown ul.visitDropSec .visitColImg a:hover {
+		-ms-transform: none;
+	    -webkit-transform: none;
+	    -moz-transform: none;
+	    -o-transform: none;
+	    transform: none;
+    }
+    header .mobileSearchMag {
+    	top: 34px;
+    }
+}
+
+@-moz-document url-prefix() { 
+	header .mobileSearchMag {
+    	top: 34px;
+  	}
+}
