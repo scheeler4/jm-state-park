@@ -1116,6 +1116,12 @@ main.parkPage #myCarousel .welcomeOverlay {
 	width: 2%;
 }
 
+.center-div{
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+}
+
 .carouselWrap.landingPage .carousel-control .glyphicon {
 	width: auto;
 	left: 0;
