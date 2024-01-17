@@ -955,7 +955,7 @@ main.parkPage .welcomeSec .left p {
 
 main.parkPage .welcomeSec .parkFullPhoto {
 	float: left;
-	width: 100%;
+	width: 80%;
 	margin: 10px;
 	border: none;
 }
@@ -1711,7 +1711,7 @@ figcaption {
 	margin-bottom: 20px;
 }
 
-#textWrap .textPagePhoto img, main.parkPage .welcomeSec .parkTextPhoto img {
+#textWrap .textPagePhoto img, main.parkPage .welcomeSec .parkTextPhoto img,  .parkFullPhoto img{
 	width: 100%;
 }
 
