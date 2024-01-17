@@ -955,7 +955,7 @@ main.parkPage .welcomeSec .left p {
 
 main.parkPage .welcomeSec .parkFullPhoto {
 	float: left;
-	width: 80%;
+	width: 100%;
 	margin: 10px;
 	border: none;
 }
