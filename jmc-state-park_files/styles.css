@@ -953,6 +953,13 @@ main.parkPage .welcomeSec .left p {
 	margin-right: 10px;
 }
 
+main.parkPage .welcomeSec .parkFullPhoto {
+	float: left;
+	width: 100%;
+	margin: 10px;
+	border: none;
+}
+
 main.parkPage .welcomeSec .parkTextPhoto {
 	float: right;
 	width: 300px;
