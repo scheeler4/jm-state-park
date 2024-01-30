@@ -49,6 +49,11 @@ strong {
 	font-family: 'MyWebFontBold';
 }
 
+.scheduleSpacing{
+	margin: 45px;
+	padding-top: 10px;
+}
+
 body {
 	font-family: 'MyWebFont', arial, geneva, sans-serif;
 }
